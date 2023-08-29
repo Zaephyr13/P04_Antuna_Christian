@@ -1,0 +1,29 @@
+{
+    "name": "ohmyfood",
+    "version": "1.0.0",
+    "description": "Création du site Ohmyfood Paris",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/styles.scss:assets/styles.css",
+        "prefix": "postcss ./assets/styles.css --use autoprefixer -d ./assets/prefixed/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Zaephyr13/P04_Antuna_Christian"
+    },
+    "author": "Christian ANTUNA",
+    "license": "ISC",
+    "browserslist": "last 4 versions",
+    "bugs": {
+        "url": "https://github.com/Zaephyr13/P04_Antuna_Christian/issues"
+    },
+    "homepage": "https://github.com/Zaephyr13/P04_Antuna_Christian#readme",
+    "devDependencies": {
+        "autoprefixer": "^10.4.14",
+        "sass": "^1.66.1"
+    },
+    "dependencies": {
+        "postcss": "^8.4.21",
+        "postcss-cli": "^10.1.0"
+    }
+}
