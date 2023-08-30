@@ -1,0 +1,12 @@
+/* Components */
+
+.cta {
+    text-decoration : none;
+    border : none;
+    border-radius : 40px;
+    color : white;
+    font-weight : 700;
+    background : linear-gradient(to top, $primary-color, $secondary-color);
+    width: 60%;
+    padding : 20px ;
+  }

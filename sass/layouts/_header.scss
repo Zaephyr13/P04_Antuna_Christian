@@ -1,0 +1,26 @@
+
+/* General */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo {
+        width: 100%;
+        padding: 15px 0;
+        z-index: 1000;
+        @include block-shadow;
+    }
+}
+
+/* Location */
+.location-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $alt-bg-color;
+}

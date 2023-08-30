@@ -1,5 +1,72 @@
-main h2 {
-  color: red;
+/* Fontstyle */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+/* Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+/* Initialize document */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-wrapper {
+  max-width: 425px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid red;
+}
+
+/* General */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .logo {
+  width: 100%;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+/* Location */
+.location-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #EAEAEA;
+}
+
+/* Explorer */
+.section-explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Components */
+.cta {
+  text-decoration: none;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  width: 60%;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
