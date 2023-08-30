@@ -1,7 +1,7 @@
-@import "./base/_typography";
-@import "./base/_init_sizing";
 @import "./utils/_variables";
 @import "./utils/_mixins";
+@import "./base/_typography";
+@import "./base/_init_sizing";
 @import "./layouts/header";
 @import "./layouts/main";
 @import "./components/buttons";

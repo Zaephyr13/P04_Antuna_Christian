@@ -13,10 +13,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #F6F6F6;
 }
 
 .main-wrapper {
-  max-width: 425px;
+  max-width: 375px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -28,6 +29,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 header .logo {
   width: 100%;
@@ -54,19 +56,31 @@ header .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px 0;
   gap: 16px;
+}
+.section-explorer h2 {
+  width: 70%;
+}
+.section-explorer h3 {
+  width: 85%;
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
 }
 
 /* Components */
+/* Button */
 .cta {
   text-decoration: none;
   border: none;
-  border-radius: 40px;
+  border-radius: 30px;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   background: linear-gradient(to top, #9356DC, #FF79DA);
-  width: 60%;
-  padding: 20px;
+  width: fit-content;
+  padding: 15px 20px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 /*# sourceMappingURL=styles.css.map */

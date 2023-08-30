@@ -10,10 +10,11 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: $main-bg-color;
 }
 
 .main-wrapper {
-    max-width: 425px;
+    max-width: 375px;
     display: flex;
     flex-direction: column;
     text-align: center;
