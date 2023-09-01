@@ -8,7 +8,7 @@ header {
         width: 100%;
         padding: 15px 0;
         z-index: 1000;
-        @include block-shadow;
+        @include base-shadow;
     }
 }
 

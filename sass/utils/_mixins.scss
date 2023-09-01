@@ -1,5 +1,15 @@
 // Mixins
 
-@mixin block-shadow {
-    box-shadow: 0 0 0.5rem rgba(#000,.4);
+@mixin base-shadow {
+    box-shadow: 0 2px 4px rgba(#000,.2);
+}
+
+@mixin darken-shadow {
+    box-shadow: 0 2px 4px rgba(#000,0.5);
+}
+
+@mixin vertical-center {
+    // margin: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Move to y-50% of object's height. */
 }

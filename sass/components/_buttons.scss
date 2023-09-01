@@ -2,13 +2,18 @@
 
 /* Button */
 .cta {
-    text-decoration : none;
-    border : none;
-    border-radius : 30px;
-    color : white;
-    font-weight : 500;
-    background : linear-gradient(to top, $primary-color, $secondary-color);
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    background: linear-gradient(to top, $primary-color, $secondary-color);
     width: fit-content;
-    padding : 15px 20px;
-    @include block-shadow;
+    padding: 15px 20px;
+    transition: all 300ms ease-out;
+    @include base-shadow;
+    &:hover {
+      @include darken-shadow;
+      opacity: 0.9;
+    }
   }
