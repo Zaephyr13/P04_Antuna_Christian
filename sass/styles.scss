@@ -1,9 +1,11 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/typography";
-@import "./base/_init_sizing";
+@import "./base/init_sizing";
 @import "./layouts/header";
 @import "./layouts/main";
 @import "./components/buttons";
 @import "./components/lists";
+@import "./components/cards";
 @import "./pages/index";
+@import "./layouts/footer";

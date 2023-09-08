@@ -1,0 +1,51 @@
+/* Cards */
+.card {
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    &__image {
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    &__content {
+        padding: 20px 10px;
+        text-align: left;
+        position: relative;
+        & p {
+            margin-top: 5px;
+            font-weight: 300;
+        }
+        & i {
+            right: 20px;
+            font-size: 30px;
+            position: absolute;
+            @include vertical-center;
+        }
+        }
+    }
+
+
+.badge-new {
+    position: relative;
+}
+.badge-new::before {
+    content: "Nouveau";
+    position: absolute;
+    background-color: $tertiary-color;
+    color: $green-font;
+    display: grid;
+    place-items: center;
+    border-radius: 2px;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 30px;
+    font-weight: 500;
+}
+
+
+
