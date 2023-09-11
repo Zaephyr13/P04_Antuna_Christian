@@ -1,0 +1,22 @@
+/* Location */
+.location-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: $tertiary-bg-color;
+    background-color: $alt-bg-color;
+    & .location-field {
+        text-decoration: none;
+        border: none;
+        width: min-content;
+        background-color: inherit;
+        font-size: 16px;
+        font-family: "roboto", sans-serif;
+        color: $tertiary-bg-color;
+        text-align: center;
+    }
+}

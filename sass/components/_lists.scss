@@ -17,12 +17,18 @@
         list-style-type: none;
         position: relative;
         @include base-shadow;
+        &:hover {
+            & i.fas {
+                color: $primary-color;
+            }
+        }
         & i.fas {
             display: inline-block;
             color: #7E7E7E;
             width: 16px;
             height: 16px;
             margin-right: 20px;
+            transition: color 300ms ease-out;
         }
         &::before {
             counter-increment: list-number;

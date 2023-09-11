@@ -24,6 +24,17 @@
             font-size: 30px;
             position: absolute;
             @include vertical-center;
+            }
+        & .fas {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            @include main-gradient(bottom);
+            opacity: 0;
+            transition: opacity 100ms ease-out;
+            &:hover {
+                opacity: 1;
+            }
         }
         }
     }

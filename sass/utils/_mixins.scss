@@ -13,3 +13,7 @@
     top: 50%;
     transform: translateY(-50%); /* Move to y-50% of object's height. */
 }
+
+@mixin main-gradient($direction) {
+    background-image: linear-gradient(to $direction, $primary-color, $secondary-color);
+}

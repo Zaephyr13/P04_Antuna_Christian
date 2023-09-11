@@ -6,10 +6,10 @@
     border-radius: 30px;
     color: white;
     font-weight: 500;
-    background: linear-gradient(to top, $primary-color, $secondary-color);
     width: fit-content;
     padding: 15px 20px;
     transition: all 300ms ease-out;
+    @include main-gradient(top);
     @include base-shadow;
     &:hover {
       @include darken-shadow;
