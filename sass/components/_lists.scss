@@ -7,6 +7,10 @@
     justify-content: center;
     gap: 15px;
     counter-reset: list-number;
+    @media only screen and (min-width: $breakpoint) { //Large devices (laptops/desktops, $breakpoint and up)
+            flex-direction: row;
+            gap: 25px;
+        }
     & li {
         padding: 25px 40px 25px 25px;
         background-color: $main-bg-color;
@@ -17,6 +21,9 @@
         list-style-type: none;
         position: relative;
         @include base-shadow;
+        @media only screen and (min-width: $breakpoint) { //Large devices (laptops/desktops, $breakpoint and up)
+                width: 30%;
+            }
         &:hover {
             & i.fas {
                 color: $primary-color;

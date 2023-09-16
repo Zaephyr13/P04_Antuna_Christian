@@ -6,6 +6,10 @@
     border-radius: 15px;
     box-sizing: border-box;
     position: relative;
+    @include base-shadow;
+    @media only screen and (min-width: $breakpoint) { //Large devices (laptops/desktops, $breakpoint and up)
+            width: 45%;
+        }
     & i {
         right: 25px;
         bottom: 30px;

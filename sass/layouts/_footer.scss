@@ -8,27 +8,48 @@ footer {
     text-align: left;
     padding: 25px;
     background-color: $tertiary-bg-color;
+    @media only screen and (min-width: $breakpoint) { //Large devices (laptops/desktops, $breakpoint and up)
+        flex-direction: row-reverse;
+        padding: 30px 25px; 
+    }
     & h3 {
         font-family: Shrikhand, cursive;
         font-weight: 400;
         margin-bottom: 25px;
         font-size: 18px;
         font-style: italic;
+        @media only screen and (min-width: $breakpoint) {//Large devices (laptops/desktops, $breakpoint and up)
+            margin-bottom: 0;
+            margin-top: 25px;
+        }
     }
     & a {
+        width: 100px;
         color: white;
     }
     .footer-container{
         display: flex;
         flex-direction: column;
         gap: 7px;
+        font-weight: 400;
+        @media only screen and (min-width: $breakpoint) { //Large devices (laptops/desktops, $breakpoint and up)
+            flex-direction: row;
+            align-self: flex-end;
+        }
+        & p {
+            width: 130px;
+        }
         & .content-text-icon{
             display: flex;
+            font-weight: 500;
+            & p {
+                width: 168px;
+            }
             & i {
                 display: block;
-                width: 20px;
+                width: 11px;
                 height: 20px;
-                padding-right: 30px;
+                padding-right: 25px;
             }
         }
     }    

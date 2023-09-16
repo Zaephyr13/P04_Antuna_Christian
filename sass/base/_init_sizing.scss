@@ -11,6 +11,10 @@
 body {
     font-family: Roboto, sans-serif;
     background-color: $main-bg-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 a {
@@ -22,4 +26,5 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    max-width: 1440px;
 }
