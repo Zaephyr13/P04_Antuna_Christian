@@ -1,3 +1,4 @@
+/* Restaurants */
 .restaurant {
     display: flex;
     flex-direction: column;
@@ -6,9 +7,9 @@
     border-radius: 30px 30px 0 0;
     margin-top: -40px;
     background-color: $main-bg-color;
+    padding: 25px 15px;
     &__name {
         position: relative;
-        padding: 15px;
         & h2 {    
             font-family: Shrikhand, cursive;
             font-size: 28px;
@@ -17,7 +18,7 @@
             text-align: left;
         }
         & i {
-            right: 25px;
+            right: 0;
             font-size: 30px;
             position: absolute;
             @include vertical-center;
@@ -34,7 +35,38 @@
             }
         }
     }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+        & h3 {
+            position: relative;
+            font-size: 16px;
+            font-weight: 300;
+            padding-bottom: 8px;
+        }
+        & .container-dishes {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
+        }
+    }
 }
+.underline-title {
+    position: relative;
+    &::after {
+        content: "";
+        width: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom: 3px solid $tertiary-color;
+    }
+}
+
 .image-highlight {
     width: 100%;
     max-height: 383px;
