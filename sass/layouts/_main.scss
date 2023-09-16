@@ -45,3 +45,15 @@
         gap: 15px;
     }
 }
+
+/* Order section */
+.section-order {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 15px 0;
+    & .cta {
+        width: 185px;
+    }
+}
