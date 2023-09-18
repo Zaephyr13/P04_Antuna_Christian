@@ -3,19 +3,28 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
+    max-width: 1055px;
     position: relative;
     border-radius: 30px 30px 0 0;
+    margin: auto;
     margin-top: -40px;
     background-color: $main-bg-color;
     padding: 25px 15px;
     &__name {
         position: relative;
+        max-width: 634px;
+        margin: auto;
+        width: 100%;
         & h2 {    
             font-family: Shrikhand, cursive;
             font-size: 28px;
             font-style: italic;
             font-weight: 400;
             text-align: left;
+            @media only screen and (min-width: $breakpoint) { //Large devices (laptops/desktops, $breakpoint and up)
+                text-align: center;
+            }
         }
         & i {
             right: 0;
@@ -49,6 +58,8 @@
         }
         & .container-dishes {
             width: 100%;
+            max-width: 634px;
+            margin: auto;
             display: flex;
             flex-direction: column;
             align-items: flex-start;

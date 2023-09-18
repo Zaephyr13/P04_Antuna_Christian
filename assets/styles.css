@@ -13,11 +13,9 @@
 
 body {
   font-family: Roboto, sans-serif;
-  background-color: #F6F6F6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  background-color: white;
+  max-width: 1440px;
+  margin: auto;
 }
 
 a {
@@ -46,6 +44,11 @@ header .logo {
   padding: 15px 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 768px) {
+  header .logo {
+    box-shadow: none;
+  }
 }
 header .logo--return {
   width: 100%;
@@ -95,6 +98,7 @@ header .logo--return img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F6F6F6;
   padding: 40px 0;
   gap: 16px;
 }
@@ -135,6 +139,7 @@ header .logo--return img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: #F6F6F6;
   padding: 40px 20px;
 }
 @media only screen and (min-width: 768px) {
@@ -193,6 +198,7 @@ header .logo--return img {
 
 .button-dish {
   width: 100%;
+  max-width: 634px;
   display: flex;
   justify-content: space-between;
   border-radius: 15px;
@@ -324,6 +330,7 @@ header .logo--return img {
 @media only screen and (min-width: 768px) {
   .card {
     width: 45%;
+    box-shadow: none;
   }
 }
 .card i {
@@ -382,14 +389,20 @@ header .logo--return img {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 100%;
+  max-width: 1055px;
   position: relative;
   border-radius: 30px 30px 0 0;
+  margin: auto;
   margin-top: -40px;
   background-color: #F6F6F6;
   padding: 25px 15px;
 }
 .restaurant__name {
   position: relative;
+  max-width: 634px;
+  margin: auto;
+  width: 100%;
 }
 .restaurant__name h2 {
   font-family: Shrikhand, cursive;
@@ -397,6 +410,11 @@ header .logo--return img {
   font-style: italic;
   font-weight: 400;
   text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .restaurant__name h2 {
+    text-align: center;
+  }
 }
 .restaurant__name i {
   right: 0;
@@ -431,6 +449,8 @@ header .logo--return img {
 }
 .restaurant__menu .container-dishes {
   width: 100%;
+  max-width: 634px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
