@@ -9,6 +9,7 @@
     @include base-shadow;
     @media only screen and (min-width: $breakpoint) { //Large devices (laptops/desktops, $breakpoint and up)
             width: 45%;
+            box-shadow: none;
         }
     & i {
         right: 25px;
