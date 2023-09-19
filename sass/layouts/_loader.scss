@@ -1,0 +1,23 @@
+/* Loader */
+
+.loader {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    inset: 0;
+    height: 100%;
+    background-color: white;
+    opacity: 0.9;
+    z-index: 2;
+    transform-origin: top;
+    animation: disappear 0ms 3s ease both;
+    &::before {
+        content: "";
+        width: 70px;
+        height: 70px;
+        border: 3px solid $primary-color;
+        border-top: none;
+        border-radius: 50%;
+        animation: spinning 500ms linear infinite;
+    }
+}

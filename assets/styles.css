@@ -1,22 +1,38 @@
 /* Animations */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
-@keyframes spinning {
-  0% {
+@keyframes spinning-quart {
+  from {
     transform: rotate(-270deg);
   }
-  100% {
+  to {
     transform: rotate(0deg);
   }
 }
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes appear-translate {
-  0% {
+  from {
     transform: translateX(50%);
     opacity: 0;
   }
-  100% {
+  to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
   }
 }
 /* Delays */
@@ -70,6 +86,29 @@
   animation-delay: calc(100ms * 10);
 }
 
+/* Loader */
+.loader {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  height: 100%;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 2;
+  transform-origin: top;
+  animation: disappear 0ms 3s ease both;
+}
+.loader::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border: 3px solid #9356DC;
+  border-top: none;
+  border-radius: 50%;
+  animation: spinning 500ms linear infinite;
+}
+
 /* Fontstyle */
 /* Icons */
 /* Initialize document */
@@ -84,8 +123,8 @@
 body {
   font-family: Roboto, sans-serif;
   background-color: white;
-  max-width: 1440px;
   margin: auto;
+  max-width: 1440px;
 }
 
 a {
@@ -97,7 +136,6 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 1440px;
 }
 
 /* General */
@@ -112,7 +150,7 @@ header .logo {
   justify-content: center;
   width: 100%;
   padding: 15px 0;
-  z-index: 1000;
+  z-index: 1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (min-width: 768px) {
@@ -331,7 +369,7 @@ header .logo--return img {
   width: 60px;
 }
 .button-dish:hover i {
-  animation: spinning 500ms ease-out;
+  animation: spinning-quart 500ms ease-out;
 }
 
 /* Lists */

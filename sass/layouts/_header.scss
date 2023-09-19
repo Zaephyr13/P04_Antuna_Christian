@@ -9,7 +9,7 @@ header {
         justify-content: center;
         width: 100%;
         padding: 15px 0;
-        z-index: 1000;
+        z-index: 1;
         @include base-shadow;
         @media only screen and (min-width: $breakpoint) {//Large devices (laptops/desktops, $breakpoint and up)
             box-shadow: none;
