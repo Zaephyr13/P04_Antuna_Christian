@@ -274,15 +274,15 @@ header .logo--return img {
   }
 }
 
-/* Order section */
-.section-order {
+/* Order display */
+.order {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 0 15px 0;
 }
-.section-order .cta {
+.order .cta {
   width: 185px;
 }
 
