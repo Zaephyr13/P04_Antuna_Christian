@@ -1,0 +1,28 @@
+/* Animations */
+@keyframes spinning {
+    0% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes appear-translate {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Delays */
+
+@for $i from 1 through 10 {
+    .delay-#{$i} {
+        animation: appear-translate 600ms ease-out both;
+        animation-delay: calc(100ms * #{$i});
+    }
+}
