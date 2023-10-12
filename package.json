@@ -23,7 +23,7 @@
         "sass": "^1.66.1"
     },
     "dependencies": {
-        "postcss": "^8.4.21",
+        "postcss": "^8.4.31",
         "postcss-cli": "^10.1.0"
     }
 }
